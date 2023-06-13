@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.board {
+@apply max-w-5xl mx-auto py-8 px-4;
+}
+
+.board-header h1 {
+@apply text-3xl font-bold mb-4;
+}
+
+.board-columns {
+@apply flex overflow-x-auto mb-4;
+}
+
+.column {
+@apply bg-white rounded-lg shadow-md w-80 mr-4;
+}
+
+.column h2 {
+@apply text-xl font-bold text-center m-4;
+}
+
+.task {
+@apply border-b-2 border-gray-200 cursor-pointer p-4;
+}
+
+.task h3 {
+@apply text-lg font-bold mb-1;
+}
+
+.task p {
+@apply text-sm text-gray-600 mb-2;
+}
+
+.task-details {
+@apply flex justify-between items-center;
+}
+
+.task-details-item span {
+@apply text-sm text-gray-600;
+}
+
+.task-details-item i {
+@apply text-sm text-gray-600 mr-1;
+}
+
+.board {
+    width: 100%;
+    margin: 0 auto;
+    max-width: none;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 1;
+    background-color: #f0f0f0;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .column h3 {
+    margin-bottom: 10px;
+  }
+  
+  .tasks {
+    margin-bottom: 10px;
+  }
+  
+  .task {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: grab;
+    position: relative;
+  }
+  
+  .task span {
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    display: inline-block;
+    width: 25px;
+    position: absolute;
+    height: 25px;
+  }
+  
+  span svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .add-task,
+  .add-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .add-task input,
+  .add-column input {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .add-task button,
+  .add-column button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
