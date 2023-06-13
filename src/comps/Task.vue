@@ -18,7 +18,7 @@ const viewDetailes =()=>{
 <template>
     <div class="task" draggable="true" @click="viewDetailes"
     @dragstart="emit('dragS',task._id, column._id)">{{ task.title }}
-    <span key="card" @click="emit('delTask',task._id, column._id)" class="text-white opacity-0 hover:opacity-100"><svg
+    <span key="card" @click.stop="emit('delTask',task._id, column._id)" class="text-white opacity-0 hover:opacity-100"><svg
             xmlns="http://www.w3.org/2000/svg" version="1.0" width="50.000000pt" height="50.000000pt"
             viewBox="0 0 50.000000 50.000000" preserveAspectRatio="xMidYMid meet">
             <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)" fill="#012030" stroke="none">
